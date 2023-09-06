@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css form</title>
+        <style>
+            .rem{
+                position: relative;
+                right: 100px;
+            }
+            label{
+                position: relative;
+                right: 115px;
+            }
+            .name, .password{
+                width: 300px;
+                height: 30px;
+            }
+            .login{
+                border: none;
+                color: white;
+                height: 30px;
+                background-color: green;
+                width: 300px;
+            }
+            .cancel{
+                display: inline;
+                color: white;
+                height: 25px;
+                width: 75px;
+                border-radius: 5px;
+                border: none;
+                margin-inline: auto;
+                margin-right: 150px;
+                background-color: red;
+            }
+            img{
+                height: 150px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <div class="img">
+                <img src="/images/pic.png" alt="pic">
+            </div>
+            <div class="form">
+                <label for="name"><b>Username</b></label><br>
+                <input type="text" class="name" placeholder="Enter Username"><br><br>
+                <label for="password"><b>Password</b></label><br>
+                <input type="password" class="password" placeholder="Enter Password"> <br> <br>
+                <button class="login">Login</button> <br> <br>
+                <input type="checkbox" class="rem">
+                <label for="rem" class="rem">Remember me</label> <br> <br>
+                <button class="cancel">Cancel</button>
+                <a href="https://www.google.com">Forget password?</a>
+                
+            </div>
+    </center>
+
+    </body>
+</html>

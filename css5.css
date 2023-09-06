@@ -1,0 +1,39 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    overflow: hidden;
+    position: absolute;
+    
+}
+
+.active{
+    color: #7d0552;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+
+li a{  
+    color: blue;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul li{
+    background-color: white;
+    margin-bottom:6px;
+    display: block;
+    width: 100px;
+    position: relative;
+}
+
+ul li span{
+    position: absolute;
+    width: 13px;
+    background-color: black;
+    right: 0px;
+}

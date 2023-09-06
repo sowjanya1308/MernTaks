@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .div{
+            position: absolute;
+        }
+        .div1{
+            /* position: relative; */
+            display: inline;
+        }
+        .horizontal {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #f1f1f1;
+
+        }
+
+        .horizontal li {
+        float: left;
+        border-right: 1px solid blue;
+        }
+
+        .horizontal li:last-child {
+        border-right: none;
+        }
+
+        .horizontal li a.active {
+        color: white;
+        background-color: #a9a9a9;
+        }
+
+        .horizontal li a {
+        display: block;
+        color: blue;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        .horizontal li a:hover:not(.horizontal.active) {
+        background-color: #a9a9a9;
+        }
+
+        .horizontal .active {
+        color: while;
+        background-color: #a9a9a9;
+        }
+
+        .vertical{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 200px;
+                overflow: hidden;
+                background-color: #A0CFEC;
+                
+            }
+        
+            .vertical li:last-child {
+                border-right: none;
+            }
+
+            .vertical li a.active {
+                color: white;
+                background-color: #FFA500;
+            }
+
+            .vertical li a{
+                display: block;
+                color: blue;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+            /* Change the link color on hover */
+
+            .vertical li a:hover:not(.vertical.active) {
+                background-color: #FFA500;
+            }
+
+            .vertical .active {
+                color: white;
+                background-color: #FFA500;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h2>Vertical Navigation Bar</h2>
+        <ul class="vertical">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#java">Java</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#bs">Bootstrap</a></li>
+    </ul>
+    </div>
+    
+    <div class="div">
+        <h2>Horizontal Navigation Bar</h2>
+        <ul class="horizontal">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#java">Java</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#html">HTML</a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>
+
+
